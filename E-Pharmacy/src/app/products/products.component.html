@@ -1,0 +1,19 @@
+<!-- products.component.html -->
+<div class="site-section">
+    <div class="container">
+      <div class="row">
+        <div class="title-section text-center col-12">
+          <h2 class="text-uppercase">Popular Products</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-lg-4 text-center item mb-4" *ngFor="let product of products">
+          <span class="tag">{{ product.tag }}</span>
+          <a href="shop-single.html"><img [src]="product.image" alt="Image"></a>
+          <h3 class="text-dark">{{ product.name }}</h3>
+          <p class="price"><del>{{ product.oldPrice }}</del> &mdash; {{ product.newPrice }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
