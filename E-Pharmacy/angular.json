@@ -37,9 +37,15 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/owl.carousel/dist/assets/owl.carousel.min.css",
+              "node_modules/aos/dist/aos.css","node_modules/magnific-popup/dist/magnific-popup.css"
             ],
-            "scripts": [],
+            "scripts": ["node_modules/jquery/dist/jquery.min.js",
+            "node_modules/bootstrap/dist/js/bootstrap.min.js","node_modules/@popperjs/core/dist/umd/popper.min.js"
+            ,"node_modules/owl.carousel/dist/owl.carousel.min.js"
+            ,"node_modules/magnific-popup/dist/jquery.magnific-popup.min.js","node_modules/aos/dist/aos.js"],
+            
             "server": "src/main.server.ts",
             "outputMode": "server",
             "ssr": {
@@ -107,5 +113,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "7cf1390e-0e11-401f-a388-489a52bc7712"
   }
 }
